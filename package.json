@@ -1,14 +1,14 @@
 {
   "name": "pcadmin-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "pcadmin命令行",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "pcadmin": "bin/pcadmin",
-    "pcadmin-init": "bin/pcadmin-init"
+    "pcadmin": "bin/pcadmin.js",
+    "pcadmin-init": "bin/pcadmin-init.js"
   },
   "author": "",
   "license": "ISC",
