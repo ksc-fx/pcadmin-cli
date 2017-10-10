@@ -1,6 +1,6 @@
 {
   "name": "pcadmin-cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "pcadmin命令行",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,10 @@
     "pcadmin": "bin/pcadmin.js",
     "pcadmin-init": "bin/pcadmin-init.js",
     "pcadmin-cinit": "bin/pcadmin-cinit.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ksc-fx/pcadmin-cli.git"
   },
   "author": "",
   "license": "ISC",
