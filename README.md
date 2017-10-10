@@ -23,3 +23,8 @@ pcamdin view <view-name>
 
 ```
 
+#### 初始化创建pcadmin组件工程
+``` bash
+pcadmin cinit <project-name>
+```
+
