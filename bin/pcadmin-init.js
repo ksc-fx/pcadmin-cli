@@ -48,7 +48,7 @@ program.option('-d --directory <directory>', 'project directory');
 
 function help () {
     program.parse(process.argv);       
-    //if (program.args.length < 1 && !program.directory) return program.help()
+    // if (program.args.length < 1 && !program.directory) return program.help()
 }
 
 help();
@@ -107,5 +107,6 @@ function downloadAndGenerate (template, tmp) {
         if (err) logger.fatal('Failed to download repo ' + template + ': ' + err.message.trim());
         console.log();
         logger.success('创建成功: "%s".', tmp);
+        logger.log('可切换到工程目录: "cd %s" 创建view.', tmp);
     });
 }

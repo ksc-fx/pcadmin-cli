@@ -5,7 +5,7 @@ const format = require('util').format
  * Prefix.
  */
 
-const prefix = '   pcadmin-c-cli'
+const prefix = '$ pcadmin-cli'
 const sep = chalk.gray('·')
 
 /**
