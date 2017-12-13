@@ -87,6 +87,8 @@ if (!viewName) {
     logger.fatal('view 的名字是必须的');
 }
 
+viewMenuIcon = (readlineSync.question('$ view 菜单的图标 : ') || '');
+
 
 /**
  * 创建view
@@ -134,6 +136,7 @@ var newMenu = {
         return $import('../../views/<view-name>/index.vue')
     },
     meta: {
+        icon : viewMenuIcon
     }
 }
 if (viewParentName) {
@@ -144,6 +147,7 @@ if (viewParentName) {
             return $import('../../views/<view-parent-name>/<view-name>/index.vue')
         },
         meta: {
+            icon : viewMenuIcon
         }
     }
     parseMenuData[viewParentName].children = parseMenuData[viewParentName].children || [];
